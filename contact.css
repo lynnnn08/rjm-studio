@@ -1,0 +1,131 @@
+/* Gaya umum untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigasi */
+nav {
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #1abc9c;
+}
+
+/* Kontainer utama */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+/* Kontak Discord */
+.discord-container {
+    text-align: center;
+    background-color: #2c2f33;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    animation: fadeIn 1s ease;
+    color: white;
+}
+
+.discord-logo {
+    width: 130px;
+    margin-bottom: 05px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.discord-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.discord-container p {
+    color: #b9bbbe;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.discord-button {
+    padding: 15px 30px;
+    background-color: #5865f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.discord-button:hover {
+    transform: scale(1.05);
+}
+
+/* Animasi Floating pada Logo */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Animasi Fade-In */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsif untuk produk */
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
